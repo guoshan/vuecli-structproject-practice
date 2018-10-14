@@ -20,7 +20,7 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 ## 常用点记载
-### 图片宽高等比例显示 假设宽高比例为31.25% 图片容器显示为下面两种 
+### 1. 图片宽高等比例显示 假设宽高比例为31.25% 图片容器显示为下面两种 
 ``` bash
     .wrapper
         overflow:hidden
@@ -31,4 +31,14 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     .wrapper
         width:100%
         height:31.25vw
+```
+### 2. git 分支的切换和合并 以新建swiper-index分支为例
+``` bash
+    git checkout swiper-index
+    git add .
+    git commit -m 'change'
+    git push
+    git checkout master
+    git merge origin/swiper-index
+    git push 
 ```
